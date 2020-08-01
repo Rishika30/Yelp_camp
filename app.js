@@ -38,11 +38,12 @@ var commentRoutes = require("./routes/comments"),
 //);
 
 
-	
+	ongodb+srv
 
-mongoose.connect("mongodb+srv:devsprout:password1234567890@yelpcamp.cxrut.mongodb.net/<dbname>?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://<username>:password1234567890@yelpcamp.cxrut.mongodb.net/rishikaa?retryWrites=true&w=majority", {
   useNewUrlParser: true,
-  useCreateIndex: true
+  useUnifiedTopology: true,	
+  useCreateIndex: true	
 })
 .then(() => console.log('Connected to DB!'))
 .catch(err => console.log("ERROR: ", err.message));
