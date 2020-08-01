@@ -39,7 +39,7 @@ var commentRoutes = require("./routes/comments"),
 
 
 
-mongoose.connect("mongodb+srv://<username>:password1234567890@yelpcamp.cxrut.mongodb.net/rishikaa?retryWrites=true&w=majority", {
+mongoose.connect("mongodb+srv://<username>:NFSmostwanted7755@yelpcamp.cxrut.mongodb.net/devsprout?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,	
   useCreateIndex: true	
