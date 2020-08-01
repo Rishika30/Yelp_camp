@@ -38,7 +38,6 @@ var commentRoutes = require("./routes/comments"),
 //);
 
 
-	ongodb+srv
 
 mongoose.connect("mongodb+srv://<username>:password1234567890@yelpcamp.cxrut.mongodb.net/rishikaa?retryWrites=true&w=majority", {
   useNewUrlParser: true,
