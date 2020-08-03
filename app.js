@@ -37,8 +37,8 @@ var commentRoutes = require("./routes/comments"),
 //	}
 //);
 
-console.log(process.env.DATABASEURL);
-mongoose.connect("mongodB://localhost/yelp_camp_3", {
+
+mongoose.connect(process.env.DATABASEURL, {
 //mongoose.connect("mongodb+srv://rishikaa:password1234567890@yelpcamp.cxrut.mongodb.net/rishikaa?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,	
@@ -46,6 +46,7 @@ mongoose.connect("mongodB://localhost/yelp_camp_3", {
 })
 .then(() => console.log('Connected to DB!'))
 .catch(err => console.log("ERROR: ", err.message));
+
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine" , "ejs");
