@@ -37,9 +37,8 @@ var commentRoutes = require("./routes/comments"),
 //	}
 //);
 
-
-mongoose.connect(process.env.DATABASEURL, {
-//mongoose.connect("mongodb+srv://rishikaa:password1234567890@yelpcamp.cxrut.mongodb.net/rishikaa?retryWrites=true&w=majority", {
+var url= process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp_3"
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,	
   useCreateIndex: true	
