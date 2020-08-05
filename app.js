@@ -1,4 +1,3 @@
-require('dotenv').config();
 var express      = require("express"),
     app          = express(),
     bodyParser   = require("body-parser"),
@@ -38,8 +37,8 @@ var commentRoutes = require("./routes/comments"),
 //	}
 //);
 
-//var url= process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp_3"
-mongoose.connect(process.env.DATABASEURL, {
+var url= process.env.DATABASEURL || "mongodb://localhost:27017/yelp_camp_3"
+mongoose.connect(url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,	
   useCreateIndex: true	
